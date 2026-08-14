@@ -3,6 +3,7 @@
             // Language: Java
             // Link: https://leetcode.com/problems/palindrome-number/
 
+class Solution{
 public static boolean isPalindrome(int num) {
     int original = num;
     int reversed = 0;
