@@ -3,6 +3,9 @@
             // Language: Java
             // Link: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 
+        return count;
+    }
+    static boolean even(int num){
     int numdigit=digits(num);
         return numdigit % 2 == 0;
     }
