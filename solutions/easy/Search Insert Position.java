@@ -3,7 +3,7 @@
             // Language: Java
             // Link: https://leetcode.com/problems/search-insert-position/
 
-        }
+            mid=left+(right-left)/2;
             if(nums[mid]==target){
                 return mid;
             }
@@ -13,10 +13,10 @@
             else{
                 left=mid+1;
             }
-            mid=left+(right-left)/2;
+        }
         while(left<=right){
-        int mid;
-        int left=0;
         int right=nums.length-1;
-class Solution {
+        int left=0;
+        int mid;
     public int searchInsert(int[] nums, int target) {
+class Solution {
