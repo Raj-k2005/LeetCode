@@ -3,6 +3,7 @@
             // Language: Java
             // Link: https://leetcode.com/problems/find-peak-element/
 
+        int end=arr.length-1;
 
         while(start < end){
             int mid=start+(end-start)/2;
@@ -15,5 +16,6 @@
         }
         return start;
     }
-}
-        int end=arr.length-1;
+        int start=0;
+class Solution {
+    public int findPeakElement(int[] arr) {
