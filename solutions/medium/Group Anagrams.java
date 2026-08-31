@@ -18,4 +18,3 @@ class Solution {
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
             }
-
