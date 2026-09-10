@@ -3,17 +3,18 @@
             // Language: Java
             // Link: https://leetcode.com/problems/valid-parentheses/
 
-                    return false;
-                }
+class Solution {
+    public boolean isValid(String s) {
+//need to do again
+        Stack<Character> stack = new Stack<>
+        ();
 
-                if (c == ']' && top != '[') {
-                    return false;
-                }
+        for (char c : s.toCharArray()) {
+
+            // Opening brackets → push
+            if (c == '(' || c == '{' || c == 
+            '[') {
+                stack.push(c);
             }
-        }
 
-        // Valid only if no opening brackets 
-        are left
-        return stack.isEmpty();
-    }
-}
+            // Closing brackets → check top
