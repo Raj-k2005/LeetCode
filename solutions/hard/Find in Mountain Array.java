@@ -3,20 +3,17 @@
             // Language: Java
             // Link: https://leetcode.com/problems/find-in-mountain-array/
 
-class Solution {
 
-    public int findInMountainArray(int target, MountainArray 
-    mountainArr) {
-        
-        int peak = peakIndexInMountainArray(mountainArr);
+            } else {
 
-        int firstTry = orderAgnostic(mountainArr, target, 0, 
-        peak);
-
-        if (firstTry != -1) {
-            return firstTry;
+                if (target > arr.get(mid)) {
+                    end = mid - 1;
+                } else {
+                    start = mid + 1;
+                }
+            }
         }
 
-        return orderAgnostic(
-            mountainArr,
-            target,
+        return -1;
+    }
+}
