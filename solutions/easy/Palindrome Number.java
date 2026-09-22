@@ -7,7 +7,8 @@ class Solution{
 public static boolean isPalindrome(int num) {
     int original = num;
     int reversed = 0;
-
+//reverse the numbers first then check if the reversed and 
+original values are same if yes then return true
     while (num > 0) {
         int digit = num % 10;
         reversed = reversed * 10 + digit;
