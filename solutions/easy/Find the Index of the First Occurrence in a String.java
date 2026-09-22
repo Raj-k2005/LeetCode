@@ -4,6 +4,7 @@
             // Link: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
 class Solution {
+    //return push check to github 
     public int strStr(String haystack, String needle) {
         for(int i=0;i<haystack.length()-needle.length()+1;i
         ++){
