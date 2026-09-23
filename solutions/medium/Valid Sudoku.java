@@ -4,6 +4,7 @@
             // Link: https://leetcode.com/problems/valid-sudoku/
 
 class Solution {
+    //not to time optimized but acceptable solution
     public boolean isValidSudoku(char[][] board) {
         int[][] rows=new int[9][9];
         int[][] col=new int[9][9];
@@ -17,5 +18,3 @@ class Solution {
                 int val=board[r][c]-'1';
                 if(rows[r][val]==1){
                     return false;
-                }
-                rows[r][val]=1;
