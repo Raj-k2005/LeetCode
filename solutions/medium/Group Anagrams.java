@@ -4,10 +4,9 @@
             // Link: https://leetcode.com/problems/group-anagrams/
 
 class Solution {
-    public List<List<String>> groupAnagrams(String
-    [] strs) {
-        Map<String, List<String>> map = new 
-        HashMap<>();
+    public List<List<String>> groupAnagrams(String[] 
+    strs) {
+        Map<String, List<String>> map = new HashMap<>();
 
         for (String str : strs) {
             char[] chars = str.toCharArray();
@@ -18,3 +17,4 @@ class Solution {
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
             }
+
