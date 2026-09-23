@@ -4,18 +4,18 @@
             // Link: https://leetcode.com/problems/repeated-substring-pattern/
 
 class Solution {
-    public boolean repeatedSubstringPattern(String 
-    s) {
+    //leetcode easy time optimized solution
+    public boolean repeatedSubstringPattern(String s) 
+    {
         int n=s.length();
         for(int i=n/2;i>=1;i--){
             if(n%i==0){
                 String substr=s.substring(0,i);
-                StringBuilder newstr=new 
-                StringBuilder();
+                StringBuilder newstr=new StringBuilder
+                ();
                 for(int j=1;j<=n/i;j++){
                    newstr.append(substr);
             }
-                   if(newstr.toString().equals(s))
-                   { return true;}
+                   if(newstr.toString().equals(s)){ 
+                   return true;}
                 }
-            }
