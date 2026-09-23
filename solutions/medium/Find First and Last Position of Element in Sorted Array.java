@@ -4,6 +4,7 @@
             // Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 class Solution {
+    //apply binary search algo for simmplest solution
     public int[] searchRange(int[] nums, int target) {
         int[] ans={-1,-1};
         int start=search(nums, target, true);
@@ -14,9 +15,7 @@ class Solution {
         return  ans;
 
     }   
-    int search(int[] nums, int target, boolean startindex){
+    int search(int[] nums, int target, boolean 
+    startindex){
 
         int ans=-1;
-
-        int start=0;
-        int end=nums.length-1;
