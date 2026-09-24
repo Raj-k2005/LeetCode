@@ -5,6 +5,7 @@
 
 class Solution {
     public int majorityElement(int[] nums) {
+        //git response push
         int cand=0;
         int count=0;
 
@@ -18,5 +19,3 @@ class Solution {
             else{
                 count--;
             }
-        }
-        return cand;
