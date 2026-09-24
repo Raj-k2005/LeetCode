@@ -5,6 +5,7 @@
 
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
+        //use cyclic sort method 
         int i=0;
         while(i<nums.length){
             int cor=nums[i]-1;
@@ -18,6 +19,3 @@ class Solution {
         List<Integer> ans=new ArrayList<>();
         for(int index=0;index<nums.length;index++){
             if(nums[index]!=index+1){
-                ans.add(nums[index]);
-            }
-        }
