@@ -3,19 +3,19 @@
             // Language: Java
             // Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
-class Solution {
-    public int removeDuplicates(int[] nums) {
-        int count=0;
+        //     }
+        // }
+        // return count;
+        int n=nums.length;
+        int i=0,j=1;
+        while(j<n){
+            if(nums[i]!=nums[j]){
+                i++;
+                nums[i]=nums[j];
+            }
+            j++;
 
-        for(int i=0;i<nums.length;i++){
-            if(i<nums.length-1 && nums[i]==nums[i+1]){
-                continue;
-            }
-            else{
-                nums[count]=nums[i];
-                count++;
-            }
         }
-        return count;
+        return i+1;
     }
 }
