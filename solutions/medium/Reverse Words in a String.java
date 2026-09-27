@@ -3,14 +3,21 @@
             // Language: Java
             // Link: https://leetcode.com/problems/reverse-words-in-a-string/
 
-class Solution {
-    public String reverseWords(String s) {
-        String[] words=s.split(" +");
-        StringBuilder sb=new StringBuilder();
-        for(int i=words.length-1;i>=0;i--){
-           sb.append(words[i]);
-           sb.append(" ");
+    while (i < n) {
+        
+        while (i < n && arr[i] != ' ') {
+            arr[r++] = arr[i++];
         }
-        return sb.toString().trim();
+        if (l < r) {
+            // Reverse  word between l and r-1
+            reverse(arr, l, r - 1);
+            if (r < n) {
+                arr[r++] = ' '; // add space
+            }
+            l = r;
+        }
+        i++;
     }
-}
+
+    //  Build final string
+    String str=new String(arr, 0, r).trim();
