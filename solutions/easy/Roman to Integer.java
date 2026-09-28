@@ -5,9 +5,9 @@
 
 class Solution {
     public int romanToInt(String s) {
-
-        Map<Character, Integer> map = new 
-        HashMap<>();
+//need to revise it
+//git repush the code
+        Map<Character, Integer> map = new HashMap<>();
 
         map.put('I', 1);
         map.put('V', 5);
@@ -19,3 +19,4 @@ class Solution {
 
         int result = 0;
 
+        for (int i = 0; i < s.length(); i++) {
