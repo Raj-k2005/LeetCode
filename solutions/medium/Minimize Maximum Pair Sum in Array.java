@@ -5,10 +5,13 @@
 
 class Solution {
     public int minPairSum(int[] nums) {
+        //sort array first 
         Arrays.sort(nums);
         int i=0;
         int j=nums.length-1;
         int result=0;
+        //update sum for every condition cheked and get the 
+        max number for array
         while(i<j){
             int sum=nums[i]+nums[j];
             result=Math.max(result, sum);
@@ -17,4 +20,3 @@ class Solution {
         }
         return result;
     }
-}
