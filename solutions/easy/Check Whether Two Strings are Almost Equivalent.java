@@ -4,8 +4,8 @@
             // Link: https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/
 
 class Solution {
-    public boolean checkAlmostEquivalent(String word1, String 
-    word2) {
+    public boolean checkAlmostEquivalent(String word1, String word2) {
+        //git code repush for the polishhhh
         int len=word1.length();
         int[] freq=new int[26];
 
@@ -19,3 +19,4 @@ class Solution {
             }
         }
         return true;
+    }
