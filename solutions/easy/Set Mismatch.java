@@ -5,6 +5,7 @@
 
 class Solution {
     public int[] findErrorNums(int[] nums) {
+        //git code repush for polish
         //apply  cyclic  sort method 
         int i=0;
         while(i<nums.length){
@@ -18,3 +19,4 @@ class Solution {
         }
         for(int index=0;index<nums.length;index++){
             if(nums[index]!=index+1){
+                return new int[] {nums[index], index+1};
