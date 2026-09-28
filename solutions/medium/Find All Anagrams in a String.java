@@ -8,6 +8,9 @@ class Solution {
         int[] pcount=new int[26];
         int[] scount=new int[26];
         List<Integer> result=new java.util.ArrayList<>();
+        //apply frequency calculation method to find the 
+        perfect solution and then check with the conditions 
+        below
 
         for(char c:p.toCharArray()){
             pcount[c-'a']++;
@@ -17,5 +20,3 @@ class Solution {
 
             if(i>=p.length()){
                 scount[s.charAt(i-p.length())-'a']--;
-            }
-            if(Arrays.equals(pcount, scount)){
