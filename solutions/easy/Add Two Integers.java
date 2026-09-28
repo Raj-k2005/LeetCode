@@ -5,6 +5,7 @@
 
 class Solution {
     public int sum(int num1, int num2) {
+        //return a+b thaats it
         return num1 + num2;
     }
 }
