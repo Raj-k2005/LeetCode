@@ -6,6 +6,7 @@
 class Solution {
     //apply binary search on the sorted array to reduce the 
     time complexity
+    //also use two pointer approch to solve the problem 
     public int[] twoSum(int[] numbers, int target) {
         int left=0;
         int right=numbers.length-1;
