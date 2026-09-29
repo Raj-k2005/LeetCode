@@ -5,6 +5,7 @@
 
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
+        //git repush for verification
         Arrays.sort(nums);
         List<List<Integer>> res=new ArrayList<>();
         // for(int i=0;i<nums.length-2;i++)
@@ -19,4 +20,3 @@ class Solution {
         //        {
         //         int sum=nums[i]+nums[j]+nums[k];
         //         if(sum<0)
-        //         {
