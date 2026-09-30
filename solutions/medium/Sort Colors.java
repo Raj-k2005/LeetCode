@@ -6,7 +6,9 @@
 class Solution {
     public void sortColors(int[] nums) {
         //here we use 3 pointer approch to solve this kind of problem
-        int n=nums.length;
+        //git repush code 
+        int rs=nums.length;
+        int n=rs;
         int low=0,mid=0,high=n-1;
         while(mid<=high){
             if(nums[mid]==0){
@@ -18,5 +20,3 @@ class Solution {
             else if(nums[mid]==1){mid++;}
             else{
                 nums[mid]=nums[high];
-                nums[high]=2;
-                high--;
