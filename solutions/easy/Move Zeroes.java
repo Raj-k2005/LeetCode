@@ -3,16 +3,16 @@
             // Language: Java
             // Link: https://leetcode.com/problems/move-zeroes/
 
-class Solution {
-    public void moveZeroes(int[] nums) {
-        int count=0;
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]!=0){
-                nums[count++]=nums[i];
+        int n=nums.length;
+        int left=0;
+        for(int right=0;right<n;right++){
+            if(nums[right]!=0){
+                int temp=nums[right];
+                nums[right]=nums[left];
+                nums[left]=temp;
+                left++;
             }
         }
-        while(count<nums.length){
-            nums[count++]=0;
-        }
+
     }
 }
