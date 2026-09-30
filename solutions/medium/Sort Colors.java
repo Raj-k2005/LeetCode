@@ -5,6 +5,7 @@
 
 class Solution {
     public void sortColors(int[] nums) {
+        //here we use 3 pointer approch to solve this kind of problem
         int n=nums.length;
         int low=0,mid=0,high=n-1;
         while(mid<=high){
@@ -19,4 +20,3 @@ class Solution {
                 nums[mid]=nums[high];
                 nums[high]=2;
                 high--;
-            }
