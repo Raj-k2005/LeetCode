@@ -5,7 +5,7 @@
 
 class Solution {
        public static boolean checkBalance(int[] freq){
-        //git repush code 
+        //git repush code ,msdf kjgsjkbgskjlbgkljbksjbdksbds
         //using frequency checking method to solve the problem
         int common=0;
             for(int i=0;i<26;i++){
@@ -16,7 +16,7 @@ class Solution {
             return true;
         }
     public int longestBalanced(String s) {
-        int n=s.length();
+        int rs=s.length();
+        int n=rs;
         int maxL=0;
         for(int i=0;i<n;i++){
-            int[] freq=new int[26];
