@@ -5,6 +5,8 @@
 
 class Solution {
        public static boolean checkBalance(int[] freq){
+        //git repush code 
+        //using frequency checking method to solve the problem
         int common=0;
             for(int i=0;i<26;i++){
                 if(freq[i]==0) continue;
@@ -18,5 +20,3 @@ class Solution {
         int maxL=0;
         for(int i=0;i<n;i++){
             int[] freq=new int[26];
-            for(int j=i;j<n;j++){
-                freq[s.charAt(j)-'a']++;
