@@ -5,6 +5,7 @@
 
 class Solution {
     public String minWindow(String s, String t) {
+        //git code repush
         Map<Character, Integer> map=new HashMap<>();
         for(char c:t.toCharArray()){
             map.put(c, map.getOrDefault(c, 0)+1);
@@ -20,3 +21,5 @@ class Solution {
             if(map.containsKey(ch)){
                 if(map.get(ch)>0) count--;
                 map.put(ch, map.get(ch)-1);
+            }
+
