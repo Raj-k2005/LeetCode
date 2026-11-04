@@ -3,21 +3,19 @@
             // Language: Java
             // Link: https://leetcode.com/problems/maximum-product-subarray/
 
-        int ans = nums[0];
+        int ans=Integer.MIN_VALUE;
+        int n=nums.length;
 
-        for (int i = 0; i < nums.length; i++) {
-            if (pre == 0) {
-                pre = 1;
-            }
+        for(int i=0;i<n;i++){
+            if(prefix==0) prefix=1;
+            if(suffix==0) suffix=1;
 
-            if (suff == 0) {
-                suff = 1;
-            }
+            prefix*=nums[i];
+            suffix*=nums[n-1-i];
 
-            pre = pre * nums[i];
-            suff = suff * nums[nums.length - 1 - i];
-
-            ans = Math.max(ans, Math.max(pre, suff));
+            ans=Math.max(ans,Math.max(prefix, suffix));
         }
-
         return ans;
+
+    }
+}
