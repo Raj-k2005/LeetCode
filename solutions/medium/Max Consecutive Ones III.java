@@ -3,9 +3,9 @@
             // Language: Java
             // Link: https://leetcode.com/problems/max-consecutive-ones-iii/
 
-class Solution {
-    public int longestOnes(int[] nums, int k) {
-        int left=0;
+        // }
+        // return n-left;
+          int left=0;
         int zerocount=0;
         int n=nums.length;
 
@@ -13,6 +13,7 @@ class Solution {
             if(nums[r]==0){
                 zerocount++;
             }
+            
             if(zerocount>k){
                 if(nums[left]==0){
                     zerocount--;
@@ -20,3 +21,5 @@ class Solution {
                 left++;
             }
         }
+        return n-left;
+    }
